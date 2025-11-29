@@ -1,0 +1,193 @@
+/* Global Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f4f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #4c5c8f;
+  padding: 1rem 1rem 2rem;
+  text-align: center;
+}
+
+.port {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #ff723b;
+}
+
+/* Profile Section */
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #000;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-text {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-text h2 {
+  color: #245781;
+}
+
+/* Services Section */
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 3rem auto;
+  max-width: 1100px;
+  gap: 2rem;
+  align-items: center;
+}
+
+.services {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Contacts Section */
+.container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 3rem auto;
+  max-width: 1100px;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contacts {
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contacts h2 {
+  color: #245781;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #68a2f8;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff723b;
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 900px) {
+
+  .profile,
+  .container2,
+  .container3 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 600px) {
+  header {
+    padding-bottom: 1rem;
+  }
+
+  .port {
+    font-size: 1.5rem;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+  }
+
+  .profile,
+  .container2,
+  .container3 {
+    padding: 1rem;
+  }
+
+  .services,
+  .contacts,
+  .profile-text {
+    padding: 1rem;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 400px) {
+  .nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .profile-pic,
+  .services-img,
+  .contact-img {
+    width: 100%;
+  }
+}
